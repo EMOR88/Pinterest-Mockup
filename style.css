@@ -1,0 +1,234 @@
+/* Ajustes iniciales para quitar margenes y subrayado en los links */
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* Generales de la barra de navegacion */
+.nav-bar-main{
+    display: flex;
+    align-items: center;
+    min-width: 768px;
+    height: 80px;
+    /* border: 1px solid black;     */
+}
+.nav-bar-in{
+    display: flex;
+    align-items: center;
+    width: 100%;    
+    height: 72px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* border: 1px solid black; */
+}
+.nav-bar-cont{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    /* border: 1px solid black; */
+}
+/* Boton Pinterest */
+.pint-logo{
+    display: flex;
+    align-items: center;
+    min-width: 48px;
+    max-width: 48px;
+    height: 48px;
+    /* border: 1px solid black; */
+    border-radius: 24px;    
+}
+.link-center-pint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.pint-logo-img{
+    width: 50%;
+    height: 50%;
+}
+.pint-logo:hover{
+    background-color: rgb(235, 231, 231);
+}
+/* Generales textos en la barra de navegacion */
+.link-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Arial Narrow', Arial, sans-serif;   
+}
+.link-center:hover{
+    color: white;
+    background-color: black;
+    border-radius: 24px;
+}
+.link-center-nohov{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Arial Narrow', Arial, sans-serif;   
+}
+.link-center-buscar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    color: rgb(94, 89, 89);
+    background-color: rgb(235, 231, 231);
+    border-radius: 24px;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Arial Narrow', Arial, sans-serif;   
+}
+/* Botones con texto en la barra de navegacion */
+.menu-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 71.438px;
+    height: 48px;
+    /* border: 1px solid black; */
+    border-radius: 24px;    
+}
+.menu-hoy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 61.453px;
+    height: 48px;
+    /* border: 1px solid black; */
+    border-radius: 24px;    
+}
+.menu-seguidos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 98.469px;
+    height: 48px;
+    /* border: 1px solid black; */
+    border-radius: 24px;    
+}
+.menu-crear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90.5px;
+    height: 48px;
+    /* border: 1px solid black; */
+    border-radius: 24px;    
+}
+.felcha-abajo{
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+}
+.felcha-abajo2{
+    width: 12px;
+    height: 12px;
+}
+.menu-buscar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    height: 48px;
+    /* border: 1px solid black; */
+    border-radius: 24px;
+    margin-left: 8px;
+    margin-right: 8px;  
+}
+.lupa{
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+}
+/* imagenes lado derecho barra nav */
+.pint-logo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    max-width: 24px;
+    height: 24px;
+    /* border: 1px solid black; */
+    border-radius: 12px;    
+}
+.pint-logo2:hover{
+    background-color: rgb(235, 231, 231);
+}
+/* Mensaje al hover sobre iconos del lado derecho de la barra de navegacion */
+a:hover {
+    position: relative;
+}
+a[data]:hover:after{
+    content: attr(data);
+    padding: 4px 8px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border-radius: 5px ;
+    background: black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+/* Arreglo de imagenes en el cuerpo */
+.abuelo{
+    display: flex;
+    justify-content: center;
+    min-width: 768px;
+}
+.padre{
+    width: 100%;
+}
+.hijo{    
+    margin: 0px 10px 20px 10px;
+    width: 236px;    
+}
+.main-images{
+    border-radius: 10px;
+    width: 100%;    
+}
+/* Acomodo de objetos segun pantalla RESPONSIVE*/
+@media screen and (max-width:768px) {
+    .padre{
+        column-count: 3;
+        width: 768px;
+    }
+}
+@media screen and (min-width:769px) {
+    .padre{
+        column-count: 4;
+        width: 1024px;
+    }
+}
+@media screen and (min-width:1025px) {
+    .padre{
+        column-count: 5;
+        width: 1280px;
+    }
+}
+@media screen and (min-width:1281px) {
+    .padre{
+        column-count: 6;
+        width: 1536px;
+    }
+}
+@media screen and (min-width:1537px) {
+    .padre{
+        column-count: 7;
+        width: 1792px;
+    }
+}
